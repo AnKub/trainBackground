@@ -1,103 +1,144 @@
 .task1 {
+  background-color: green;
 }
 
 .task2 {
+  background-image: url(/img/img-400x200.jpg);
 }
 
 .task3 {
+  background: rgb(251, 69, 63);
+  background: linear-gradient(
+    356deg,
+    rgba(251, 69, 63, 1) 0%,
+    rgba(246, 223, 0, 1) 100%
+  );
 }
 
 .task4 {
+  background: rgb(35, 205, 138);
+  background: radial-gradient(
+    circle,
+    rgba(35, 205, 138, 1) 17%,
+    rgba(245, 245, 245, 1) 42%,
+    rgba(194, 179, 0, 1) 79%
+  );
 }
 
 .task5 {
+  background: conic-gradient(
+    from 3.1416rad at 10% 50%,
+    #e66465,
+    #9198e5
+  );
 }
 
 .task6 {
   background-image: url('/img/img-400x200.jpg');
+  background-repeat: repeat-x;
 }
 
 .task7 {
   background-image: url('/img/img-400x200.jpg');
+  background-repeat: repeat-y;
 }
 
 .task8 {
   background-image: url('/img/img-400x200.jpg');
+  background-repeat: no-repeat;
 }
 
 .task9 {
   background-image: url('/img/img-400x200.jpg');
+  background-repeat: space;
 }
 
 .task10 {
   background-image: url('/img/img-400x200.jpg');
+  background-repeat: round;
 }
 
 .task11 {
   background-image: url('/img/img-400x200.jpg');
+  background-attachment: scroll;
 }
 
 .task12 {
   background-image: url('/img/img-400x200.jpg');
+  background-attachment: fixed;
 }
 
 .task13 {
   background-image: url('/img/img-400x200.jpg');
+  background-attachment: local;
 }
 
 .task14 {
   background-image: url('/img/img-400x200.jpg');
+  background-position: center;
 }
 
 .task15 {
   background-image: url('/img/img-400x200.jpg');
+  background-position: top;
 }
 
 .task16 {
   background-image: url('/img/img-400x200.jpg');
+  background-position: bottom;
 }
 
 .task17 {
   background-image: url('/img/img-400x200.jpg');
+  background-position: left;
 }
 
 .task18 {
   background-image: url('/img/img-400x200.jpg');
+  background-position: right;
 }
 
 .task19 {
   background-image: url('/img/img-400x200.jpg');
+  background-position-x: 100px;
 }
 
 .task20 {
   background-image: url('/img/img-400x200.jpg');
+  background-size: auto;
 }
 
 .task21 {
   background-image: url('/img/img-400x200.jpg');
+  background-size: 600px;
 }
 
 .task22 {
   background-image: url('/img/img-400x200.jpg');
+  background-size: 50%;
 }
 
 .task23 {
   background-image: url('/img/img-400x200.jpg');
+  background-size: contain;
 }
 
 .task24 {
   background-image: url('/img/img-400x200.jpg');
+  background-size: cover;
 }
 
 .task25 {
   border: 20px dashed black;
   background-image: url('/img/img-400x200.jpg');
   box-sizing: border-box;
+  background-size: initial;
 }
 
 .task26 {
   background-image: url('/img/img-400x200.jpg');
   border: 20px dashed black;
+  background-clip: padding-box;
   box-sizing: border-box;
 }
 
@@ -105,7 +146,8 @@
   background-image: url('/img/img-400x200.jpg');
   font-size: 120px;
   font-weight: 900;
-  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .task28 {
@@ -113,6 +155,8 @@
   box-sizing: border-box;
   border: 20px dashed black;
   background-repeat: no-repeat;
+  background-position-x: -20px;
+  background-position-y: -20px;
 }
 
 .task29 {
@@ -131,22 +175,39 @@
   font-size: 100px;
   font-weight: 900;
   padding: 60px;
+  background-position: 20% 30%;
 }
 
 .task31 {
   border-image-slice: 1%;
   border-image-width: 40px;
   box-sizing: border-box;
+  border: 40px solid skyblue;
+  border-image: linear-gradient(
+    to right top,
+    rgb(255, 0, 0),
+    skyblue,
+    blue
+  );
+  border-image-slice: 1;
 }
 
 .task32 {
   border-image-slice: 1%;
   border-image-width: 40px;
   box-sizing: border-box;
+  border: 40px solid rgb(2, 129, 255);
+  border-image: radial-gradient(
+    to right top,
+    red 5%,
+    green 15%,
+    blue 60%
+  );
+  border-image-slice: 1;
 }
 
 .task33 {
-  border-image-source: url('/img/img-400x200.jpg');
+  border-image: url('/img/img-400x200.jpg');
   box-sizing: border-box;
   border-image-width: 40px;
   border-image-slice: 10;
